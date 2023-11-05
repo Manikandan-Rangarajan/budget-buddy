@@ -1,0 +1,144 @@
+/* Combined CSS for your HTML structure */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    height: 80vh;
+  }
+  
+  /* Heading Styles */
+  .heading {
+    text-align: center;
+    font-weight: 700;
+    color: rgb(148, 55, 148);
+    font-size: 30px;
+    font-family: 'Black Ops One', cursive;
+  }
+  
+  /* Container Styles */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(148, 55, 148);
+    margin: 200px auto;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.1) inset;
+  }
+  
+  .container h1 {
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+  }
+  
+  .container input {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    height: 30px;
+    width: 200px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    border: none;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .btn {
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;color: black;
+  }
+  
+  .btn:hover {
+    background: rgb(110, 240, 236);
+    color: rgb(2, 2, 2);
+    transition: 4ms;
+  }
+  
+  /* Navbar Styles */
+  /* Your existing CSS styles go here */
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgb(148, 55, 148);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  /* Additional styles for centering "Services" */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.navbar .icon {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+#expenses{
+  color: white;
+}
+/* Your other styles go here */
+
+  .total{
+    margin: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar a {
+      display: none;
+    }
+  
+    .navbar .icon {
+      display: block;
+    }
+  
+    .navbar.responsive {
+      position: relative;
+    }
+  
+    .navbar.responsive .icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  
+    .navbar.responsive a {
+      display: block;
+    }
+  }
+  

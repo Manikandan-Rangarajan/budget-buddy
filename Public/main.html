@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Violet Navbar with Hamburger Menu</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="navbar" id="myNavbar">
+      <a href="#" style="font-weight: bolder; font-size: 1.5em">BUDGET-BUDDY</a>
+      <div>
+        <form action="/listSer" method="post">
+          <button class="btnnav">Home</button>
+          <button class="btnnav">About</button>
+          <button class="btnnav">Services</button>
+          <button class="btnnav">Contact</button>
+        </form>
+
+        <a class="icon" id="icon">&#9776;</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="sub-card">
+        <form action="" method="">
+          <input
+            type="number"
+            id="PIncome"
+            placeholder="Enter your Income from salary"
+            min="0"
+          />
+          <input
+            type="number"
+            id="SIncome"
+            placeholder="Enter your Income from other sources"
+            min="0"
+          />
+          <input
+            type="number"
+            id="PExpenses"
+            placeholder="Enter your personal Expenses"
+            min="0"
+          />
+          <input
+            type="number"
+            id="OExpenses"
+            placeholder="Enter your official Expenses"
+            min="0"
+          />
+        </form>
+        <button class="btn" id="btn">Enter</button>
+        <div class="total">
+          <h3>Total:</h3>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
